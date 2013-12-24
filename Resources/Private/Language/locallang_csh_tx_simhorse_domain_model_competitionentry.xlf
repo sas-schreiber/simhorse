@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-12-01T15:28:33Z" product-name="simhorse">
+		<header/>
+		<body>
+
+			<trans-unit id="date.description">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="link.description">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="show_name.description">
+				<source>showName</source>
+			</trans-unit>
+			<trans-unit id="place.description">
+				<source>place</source>
+			</trans-unit>
+			<trans-unit id="special_title.description">
+				<source>specialTitle</source>
+			</trans-unit>
+			<trans-unit id="association.description">
+				<source>association</source>
+			</trans-unit>
+			<trans-unit id="association_points.description">
+				<source>associationPoints</source>
+			</trans-unit>
+			<trans-unit id="earnings.description">
+				<source>earnings</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="class.description">
+				<source>class</source>
+			</trans-unit>
+			<trans-unit id="level.description">
+				<source>level</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

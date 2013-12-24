@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-12-01T15:28:33Z" product-name="simhorse">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_simhorse_domain_model_horse">
+				<source>Horse</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.praefix">
+				<source>Praefix</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.suffix">
+				<source>Suffix</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.color">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.color_genetics">
+				<source>Color Genetics</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.breed">
+				<source>Breed</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.year_of_birth">
+				<source>Year Of Birth</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.breeder">
+				<source>Breeder</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.previous_owner">
+				<source>Previous Owner</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.open_for_breeding">
+				<source>Open For Breeding</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.breeding_fee">
+				<source>Breeding Fee</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.licensed_for">
+				<source>Licensed For</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.breeding_information">
+				<source>Breeding Information</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.pedigree_entry">
+				<source>Pedigree Entry</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.training">
+				<source>Training</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.competition_entries">
+				<source>Competition Entries</source>
+			</trans-unit>
+
+			<trans-unit id="tx_simhorse_domain_model_pedigree">
+				<source>Pedigree</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_pedigree.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_pedigree.external_link">
+				<source>External Link</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_pedigree.sire">
+				<source>Sire</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_pedigree.dam">
+				<source>Dam</source>
+			</trans-unit>
+
+			<trans-unit id="tx_simhorse_domain_model_performanceclass">
+				<source>Performance Class</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_performanceclass.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_performanceclass.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_performanceclass.performance_levels">
+				<source>Performance Levels</source>
+			</trans-unit>
+
+			<trans-unit id="tx_simhorse_domain_model_performancelevel">
+				<source>Performance Level</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_performancelevel.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_performancelevel.numeric_value">
+				<source>Numeric Value</source>
+			</trans-unit>
+
+			<trans-unit id="tx_simhorse_domain_model_training">
+				<source>Training</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_training.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_training.training_class">
+				<source>Training Class</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_training.training_level">
+				<source>Training Level</source>
+			</trans-unit>
+
+			<trans-unit id="tx_simhorse_domain_model_competitionentry">
+				<source>Competition Entry</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.show_name">
+				<source>Show Name</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.place">
+				<source>Place</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.special_title">
+				<source>Special Title</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.association">
+				<source>Association</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.association_points">
+				<source>Association Points</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.earnings">
+				<source>Earnings</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.class">
+				<source>Class</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_competitionentry.level">
+				<source>Level</source>
+			</trans-unit>
+
+			<trans-unit id="tx_simhorse_domain_model_breeding">
+				<source>Breeding</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_breeding.breeding_date">
+				<source>Breeding Date</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_breeding.foaling_date">
+				<source>Foaling Date</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_breeding.owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_breeding.approved">
+				<source>Approved</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_breeding.pedigree_entry">
+				<source>Pedigree Entry</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.training_text">
+				<source>Training Information</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

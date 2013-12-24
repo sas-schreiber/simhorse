@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-12-01T15:28:33Z" product-name="simhorse">
+		<header/>
+		<body>
+
+			<trans-unit id="status.description">
+				<source>status</source>
+			</trans-unit>
+			<trans-unit id="training_class.description">
+				<source>trainingClass</source>
+			</trans-unit>
+			<trans-unit id="training_level.description">
+				<source>trainingLevel</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

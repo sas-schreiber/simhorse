@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-12-01T15:28:33Z" product-name="simhorse">
+		<header/>
+		<body>
+
+			<trans-unit id="breeding_date.description">
+				<source>breedingDate</source>
+			</trans-unit>
+			<trans-unit id="foaling_date.description">
+				<source>foalingDate</source>
+			</trans-unit>
+			<trans-unit id="owner.description">
+				<source>owner</source>
+			</trans-unit>
+			<trans-unit id="approved.description">
+				<source>approved</source>
+			</trans-unit>
+			<trans-unit id="pedigree_entry.description">
+				<source>pedigreeEntry</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
