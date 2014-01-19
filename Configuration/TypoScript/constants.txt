@@ -1,0 +1,14 @@
+plugin.tx_simhorse {
+	view {
+		# cat=plugin.tx_simhorse/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:simhorse/Resources/Private/Templates/
+		# cat=plugin.tx_simhorse/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:simhorse/Resources/Private/Partials/
+		# cat=plugin.tx_simhorse/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:simhorse/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_simhorse//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

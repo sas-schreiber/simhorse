@@ -1,0 +1,16 @@
+<label for="breedingDate">
+	<f:translate key="tx_simhorse_domain_model_breeding.breeding_date" />
+</label><br />
+	<f:form.textfield property="breedingDate"  value="{breeding.breedingDate->f:format.date()}" /><br />
+<label for="foalingDate">
+	<f:translate key="tx_simhorse_domain_model_breeding.foaling_date" />
+</label><br />
+	<f:form.textfield property="foalingDate"  value="{breeding.foalingDate->f:format.date()}" /><br />
+<label for="owner">
+	<f:translate key="tx_simhorse_domain_model_breeding.owner" />
+</label><br />
+	<f:form.textfield property="owner" /><br />
+<label for="approved">
+	<f:translate key="tx_simhorse_domain_model_breeding.approved" />
+</label><br />
+	<f:form.checkbox property="approved" value="1" /><br />

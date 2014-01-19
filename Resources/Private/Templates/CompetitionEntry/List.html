@@ -1,0 +1,54 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for CompetitionEntry</h1>
+
+<f:flashMessages />
+
+<table  class="tx_simhorse" >
+	<tr>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.date" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.location" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.link" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.show_name" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.place" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.special_title" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.association" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.association_points" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.earnings" /></th>
+		<th><f:translate key="tx_simhorse_domain_model_competitionentry.image" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{competitionEntries}" as="competitionEntry">
+		<tr>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.date -> f:format.date()}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.location}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.link}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.showName}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.place}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.specialTitle}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.association}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.associationPoints}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.earnings}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{competitionEntry : competitionEntry}"> {competitionEntry.image}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{competitionEntry : competitionEntry}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{competitionEntry : competitionEntry}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New CompetitionEntry</f:link.action>
+</f:section>
