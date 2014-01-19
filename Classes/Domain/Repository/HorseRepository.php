@@ -33,5 +33,38 @@ namespace Simhorse\Simhorse\Domain\Repository;
  */
 class HorseRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
+	/**
+	* import from the old database z_pferde
+	* 
+	* @return integer $status
+	**/
+	public function importOldData() {
+
+		$horse = $this->findByUid(1);
+
+		//\TYPO3\CMS\Core\Utility\DebugUtility::debug($horse);
+
+
+			$query = $this->createQuery();
+
+
+			//Bilddaten transferieren
+			$query->statement("SELECT bild1 FROM z_pferde WHERE name = '" . $horse->getName() . "';");
+			$result = $query->execute();
+			//\TYPO3\CMS\Core\Utility\DebugUtility::debug($result);
+			if ($result['bild1']) {
+				$imagePraefix = explode($result['bild1'], "01");
+				$imagePraefix = $imagePraefix[0];
+				$horse->setImagePraefix($imagePraefix);
+				$this->update($horse); 
+			}
+		return 1;
+
+
+
+
+
+	}
+
 }
 ?>

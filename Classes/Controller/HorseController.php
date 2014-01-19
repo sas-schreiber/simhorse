@@ -47,7 +47,9 @@ class HorseController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 	 * @return void
 	 */
 	public function listAction() {
+		//$this->horseRepository->importOldData();
 		$horses = $this->horseRepository->findAll();
+
 		$this->view->assign('horses', $horses);
 	}
 

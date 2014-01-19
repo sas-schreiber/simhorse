@@ -12,11 +12,10 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Horse</h1>
 
 <f:flashMessages />
 
-<table  class="tx_simhorse" >
+<table  class="tx_simhorse table table-striped" >
 	<tr>
 		<th><f:translate key="tx_simhorse_domain_model_horse.name" /></th>
 		<th><f:translate key="tx_simhorse_domain_model_horse.gender" /></th>
@@ -28,7 +27,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<f:for each="{horses}" as="horse">
 		<tr>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.gender}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{horse : horse}"> <f:translate key="tx_simhorse_domain_model_horse.gender.{horse.gender}" /></f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.color}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.breed}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.yearOfBirth}</f:link.action></td>
