@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_simhorse_domain_model_horse'] = array(
 	'ctrl' => $TCA['tx_simhorse_domain_model_horse']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, praefix, suffix, gender, description, color, color_genetics, breed, year_of_birth, breeder, previous_owner, open_for_breeding, breeding_fee, licensed_for, breeding_information, pedigree_entry, training, competition_entries, training_text',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, praefix, suffix, gender, image_praefix, description, color, color_genetics, breed, year_of_birth, breeder, previous_owner, open_for_breeding, breeding_fee, licensed_for, breeding_information, pedigree_entry, training, competition_entries, training_text',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, praefix, suffix, gender, description, color, color_genetics, breed, year_of_birth, breeder, previous_owner, open_for_breeding, breeding_fee, licensed_for, breeding_information, pedigree_entry, training, competition_entries, training_text, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, praefix, suffix, gender, image_praefix, description, color, color_genetics, breed, year_of_birth, breeder, previous_owner, open_for_breeding, breeding_fee, licensed_for, breeding_information, pedigree_entry, training, competition_entries, training_text, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -131,6 +131,15 @@ $TCA['tx_simhorse_domain_model_horse'] = array(
 				'size' => 1,
 				'maxitems' => 1,
 				'eval' => 'required'
+			),
+		),
+		'image_praefix' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:simhorse/Resources/Private/Language/locallang_db.xlf:tx_simhorse_domain_model_horse.image_praefix',
+			'config' => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim'
 			),
 		),
 		'description' => array(

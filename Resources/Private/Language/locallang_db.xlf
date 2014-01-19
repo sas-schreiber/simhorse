@@ -13,6 +13,10 @@
 			<trans-unit id="tx_simhorse_domain_model_horse.praefix">
 				<source>Praefix</source>
 			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.image_praefix">
+				<source>Image autofind name (fileadmin/horsepics/[name]_01.jpg)</source>
+			</trans-unit>
+
 			<trans-unit id="tx_simhorse_domain_model_horse.suffix">
 				<source>Suffix</source>
 			</trans-unit>
@@ -60,6 +64,15 @@
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.competition_entries">
 				<source>Competition Entries</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.gender.0">
+				<source>Hengst</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.gender.1">
+				<source>Stute</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.gender.2">
+				<source>Wallach</source>
 			</trans-unit>
 
 			<trans-unit id="tx_simhorse_domain_model_pedigree">

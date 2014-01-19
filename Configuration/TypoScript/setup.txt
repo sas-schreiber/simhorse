@@ -11,6 +11,9 @@ plugin.tx_simhorse {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
 	}
+	settings {
+		singlePid = {$plugin.tx_simhorse.settings.singlePid}
+	}
 }
 
 plugin.tx_simhorse._CSS_DEFAULT_STYLE (

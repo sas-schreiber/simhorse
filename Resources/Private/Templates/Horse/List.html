@@ -19,46 +19,21 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <table  class="tx_simhorse" >
 	<tr>
 		<th><f:translate key="tx_simhorse_domain_model_horse.name" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.praefix" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.suffix" /></th>
 		<th><f:translate key="tx_simhorse_domain_model_horse.gender" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.description" /></th>
 		<th><f:translate key="tx_simhorse_domain_model_horse.color" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.color_genetics" /></th>
 		<th><f:translate key="tx_simhorse_domain_model_horse.breed" /></th>
 		<th><f:translate key="tx_simhorse_domain_model_horse.year_of_birth" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.breeder" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.previous_owner" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.open_for_breeding" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.breeding_fee" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.licensed_for" /></th>
-		<th><f:translate key="tx_simhorse_domain_model_horse.breeding_information" /></th>
-		<th> </th>
-		<th> </th>
 	</tr>
 
 	<f:for each="{horses}" as="horse">
 		<tr>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.praefix}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.suffix}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.gender}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.description}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.color}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.colorGenetics}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.breed}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.yearOfBirth}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.breeder}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.previousOwner}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.openForBreeding}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.breedingFee}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.licensedFor}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{horse : horse}"> {horse.breedingInformation}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{horse : horse}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{horse : horse}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
 </table>
 
-<f:link.action action="new">New Horse</f:link.action>
 </f:section>

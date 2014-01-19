@@ -49,6 +49,14 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $praefix;
 
 	/**
+	 * imagePraefix
+	 *
+	 * @var \string
+	 */
+	protected $imagePraefix;
+
+
+	/**
 	 * suffix
 	 *
 	 * @var \string
@@ -408,6 +416,25 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setBreeder($breeder) {
 		$this->breeder = $breeder;
+	}
+
+	/**
+	 * Returns the imagePraefix
+	 *
+	 * @return \string $imagePraefix
+	 */
+	public function getImagePraefix() {
+		return $this->imagePraefix;
+	}
+
+	/**
+	 * Sets the imagePraefix
+	 *
+	 * @param \string $imagePraefix
+	 * @return void
+	 */
+	public function setImagePraefix($imagePraefix) {
+		$this->imagePraefix = $imagePraefix;
 	}
 
 	/**

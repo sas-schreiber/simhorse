@@ -9,11 +9,13 @@ if (!defined('TYPO3_MODE')) {
 	'Horse List'
 );
 
+/*
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	$_EXTKEY,
 	'Single',
 	'Horse Single'
 );
+*/
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Simhorse');
 

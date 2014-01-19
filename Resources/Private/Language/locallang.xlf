@@ -8,7 +8,7 @@
 				<source>Horse</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.name">
-				<source>name</source>
+				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.praefix">
 				<source>praefix</source>
@@ -17,22 +17,22 @@
 				<source>suffix</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.gender">
-				<source>gender</source>
+				<source>Gender</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.description">
 				<source>description</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.color">
-				<source>color</source>
+				<source>Color</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.color_genetics">
 				<source>colorGenetics</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.breed">
-				<source>breed</source>
+				<source>Breed</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.year_of_birth">
-				<source>yearOfBirth</source>
+				<source>Year of birth</source>
 			</trans-unit>
 			<trans-unit id="tx_simhorse_domain_model_horse.breeder">
 				<source>breeder</source>
@@ -61,7 +61,16 @@
 			<trans-unit id="tx_simhorse_domain_model_horse.competition_entries">
 				<source>competitionEntries</source>
 			</trans-unit>
-			
+			<trans-unit id="tx_simhorse_domain_model_horse.gender.0">
+				<source>Hengst</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.gender.1">
+				<source>Stute</source>
+			</trans-unit>
+			<trans-unit id="tx_simhorse_domain_model_horse.gender.2">
+				<source>Wallach</source>
+			</trans-unit>
+
 			<trans-unit id="tx_simhorse_domain_model_pedigree">
 				<source>Pedigree</source>
 			</trans-unit>

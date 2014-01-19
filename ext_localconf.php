@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
 	'Simhorse.' . $_EXTKEY,
 	'List',
 	array(
-		'Horse' => 'list',
+		'Horse' => 'list, show'
 		
 	),
 	// non-cacheable actions
@@ -15,7 +15,7 @@ if (!defined('TYPO3_MODE')) {
 		
 	)
 );
-
+/*
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 	'Simhorse.' . $_EXTKEY,
 	'Single',
@@ -28,5 +28,5 @@ if (!defined('TYPO3_MODE')) {
 		
 	)
 );
-
+*/
 ?>

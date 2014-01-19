@@ -25,6 +25,7 @@ CREATE TABLE tx_simhorse_domain_model_horse (
 	training int(11) unsigned DEFAULT '0' NOT NULL,
 	competition_entries int(11) unsigned DEFAULT '0' NOT NULL,
 	training_text text NOT NULL,
+	image_praefix varchar(255) DEFAULT '' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

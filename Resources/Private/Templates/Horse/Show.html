@@ -12,10 +12,66 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Horse</h1>
 
-<f:flashMessages />
-<f:render partial="Horse/Properties" arguments="{horse:horse}" />
-<f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New Horse</f:link.action>
+<img src="fileadmin/horsepics/{horse.imagePraefix}01.jpg" />
+
+<div class="page-header">
+	<h1>{horse.name}</h1>
+</div>
+<div class="horse-subtitle">{horse.breed} <f:translate key="tx_simhorse_domain_model_horse.gender.{horse.gender}" />, {horse.color}</div>
+<f:format.raw>{horse.description}</f:format.raw>
+
+<h2>Ausbildung</h2>
+<f:format.raw>{horse.trainingText}</f:format.raw>
+
+<h2>Zucht</h2>
+<table class="table table-striped">
+	<tr>
+		<td>Zuchtname</td>
+		<td>{horse.praefix} {horse.name} {horse.suffix}</td>
+	</tr>
+	<tr>
+		<td>Züchter</td>
+		<td><f:format.raw>{horse.breeder}</f:format.raw></td>
+	</tr>
+	<tr>
+		<td>Vorbesitzer</td>
+		<td>{horse.previousOwner}</td>
+	</tr>
+	<tr>
+		<td>Verfügbar</td>
+		<td>{horse.openForBreeding}</td>
+	</tr>
+	<tr>
+		<td>Zugelassen für</td>
+		<td>{horse.licensedFor}</td>
+	</tr>
+	<tr>
+		<td>Farbgenetik</td>
+		<td>{horse.colorGenetics}</td>
+	</tr>
+</table>
+<f:format.raw>{horse.breedingInformation}</f:format.raw>
+
+<h2>Abstammung</h2>
+
+<div style="float: left; width: 25%; height: 200px;">{horse.name}</div>
+
+<div style="float: left; width: 25%;">
+	<div style="height: 100px;">
+		{horse.pedigreeEntry.sire.name}
+	</div>
+	<div style="height: 100px;">
+		{horse.pedigreeEntry.dam.name}
+	</div>
+</div>
+
+
+<f:debug>{horse}</f:debug>
+
+
+
+<br><br>
+<div style="clear: both;"></div>
+<f:link.action action="list">>> zurück zur Übersicht</f:link.action>
 </f:section>
