@@ -62,6 +62,12 @@ class Pedigree extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $dam;
 
 	/**
+	*
+	* @var \Simhorse\Simhorse\Domain\Model\Horse
+	*/
+	protected $horse;
+
+	/**
 	 * Returns the name
 	 *
 	 * @return \string $name
@@ -137,5 +143,22 @@ class Pedigree extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->dam = $dam;
 	}
 
+
+	/**
+	*
+	* @return \Simhorse\Simhorse\Domain\Model\Horse $horse
+	*/
+	public function getHorse() {
+		return $this->horse;
+	}
+
+	/**
+	*
+	* @param \Simhorse\Simhorse\Domain\Model\Horse $horse
+	* @return void
+	*/
+	public function setHorse(\Simhorse\Simhorse\Domain\Model\Horse $horse) {
+		$this->horse = $horse;
+	}
 }
 ?>

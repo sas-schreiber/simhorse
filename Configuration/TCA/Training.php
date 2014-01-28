@@ -99,7 +99,8 @@ $TCA['tx_simhorse_domain_model_training'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('Currently in training', 0),
+					array('Potential', 1),
 				),
 				'size' => 1,
 				'maxitems' => 1,

@@ -69,6 +69,7 @@ CREATE TABLE tx_simhorse_domain_model_pedigree (
 	external_link varchar(255) DEFAULT '' NOT NULL,
 	sire int(11) unsigned DEFAULT '0',
 	dam int(11) unsigned DEFAULT '0',
+	horse int(11) unsigned DEFAULT '0',
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

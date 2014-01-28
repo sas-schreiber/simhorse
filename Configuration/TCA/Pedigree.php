@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_simhorse_domain_model_pedigree'] = array(
 	'ctrl' => $TCA['tx_simhorse_domain_model_pedigree']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, external_link, sire, dam',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, external_link, sire, dam, horse',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, external_link, sire, dam,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, external_link, sire, dam, horse, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -139,6 +139,23 @@ $TCA['tx_simhorse_domain_model_pedigree'] = array(
 				'maxitems' => 1,
 			),
 		),
+		
+		'horse' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:simhorse/Resources/Private/Language/locallang_db.xlf:tx_simhorse_domain_model_pedigree.horse',
+			'config' => array(
+				'type' => 'select',
+				'foreign_table' => 'tx_simhorse_domain_model_horse',
+				'foreign_table_where' => 'ORDER BY name ASC',
+				'maxitems'      => 1,
+				'minitems'		=> 0,
+				'items' => array(
+						Array("",0),
+
+					),
+			),
+		),
+		
 	),
 );
 

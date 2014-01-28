@@ -126,7 +126,9 @@ $TCA['tx_simhorse_domain_model_horse'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('Stallion', 0),
+					array('Mare', 1),
+					array('Gelding', 2),
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -270,17 +272,52 @@ $TCA['tx_simhorse_domain_model_horse'] = array(
 			'config' => array(
 				'type' => 'inline',
 				'foreign_table' => 'tx_simhorse_domain_model_pedigree',
-				'foreign_table_where' => 'ORDER BY name ASC',
-				'minitems' => 0,
-				'maxitems' => 1,
+				'foreign_field' => 'horse',
+				'maxitems'      => 9999,
 				'appearance' => array(
 					'collapseAll' => 0,
 					'levelLinksPosition' => 'top',
 					'showSynchronizationLink' => 1,
 					'showPossibleLocalizationRecords' => 1,
-					'showAllLocalizationLink' => 1
+					'showAllLocalizationLink' => 1,
+					'useCombination' => 1,
 				),
 			),
+			/*
+			'config' => array(
+				'type' => 'select',
+				'foreign_table' => 'tx_simhorse_domain_model_pedigree',
+				'foreign_table_where' => 'ORDER BY name ASC',
+				'symmetric_field' => 'horse',
+				'minitems' => 0,
+				'maxitems' => 1,
+				'items' => array(
+					0 => "---",
+					),
+				'wizards' => array(
+				'_PADDING' => 1,
+				'_VERTICAL' => 1,
+				'edit' => array(
+					'type' => 'popup',
+					'title' => 'Edit',
+					'script' => 'wizard_edit.php',
+					'icon' => 'edit2.gif',
+					'popup_onlyOpenIfSelected' => 1,
+					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
+					),
+				'add' => Array(
+					'type' => 'script',
+					'title' => 'Create new',
+					'icon' => 'add.gif',
+					'params' => array(
+						'table' => 'tx_simhorse_domain_model_training',
+						'pid' => '###CURRENT_PID###',
+						'setValue' => 'prepend'
+						),
+					'script' => 'wizard_add.php',
+				),
+			),
+			),*/
 		),
 		'training' => array(
 			'exclude' => 0,
