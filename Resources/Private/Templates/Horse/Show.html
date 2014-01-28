@@ -12,8 +12,12 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<img src="fileadmin/horsepics/{horse.imagePraefix}01.jpg" />
+<f:for each="{horse.images}" as="image">
+<f:image src="{image.uid}" alt="{image.originalResource.title}" height="100" treatIdAsReference="1" />
 
+
+
+</f:for>
 <div class="page-header">
 	<h1>{horse.name}</h1>
 </div>
@@ -64,7 +68,6 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		{horse.pedigreeEntry.dam.name}
 	</div>
 </div>
-
 
 
 <br><br>

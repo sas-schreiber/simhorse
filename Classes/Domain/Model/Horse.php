@@ -49,14 +49,6 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $praefix;
 
 	/**
-	 * imagePraefix
-	 *
-	 * @var \string
-	 */
-	protected $imagePraefix;
-
-
-	/**
 	 * suffix
 	 *
 	 * @var \string
@@ -187,7 +179,15 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\Category>
 	 */
 	protected $categories;
-	
+
+	/**
+	 * images
+	 *
+	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+	 * @lazy
+	 */
+	protected $images;
+
 	/**
 	 * __construct
 	 *
@@ -212,6 +212,8 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->training = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 		
 		$this->competitionEntries = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+
+		$this->images = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 	}
 
 	/**
@@ -423,25 +425,6 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setBreeder($breeder) {
 		$this->breeder = $breeder;
-	}
-
-	/**
-	 * Returns the imagePraefix
-	 *
-	 * @return \string $imagePraefix
-	 */
-	public function getImagePraefix() {
-		return $this->imagePraefix;
-	}
-
-	/**
-	 * Sets the imagePraefix
-	 *
-	 * @param \string $imagePraefix
-	 * @return void
-	 */
-	public function setImagePraefix($imagePraefix) {
-		$this->imagePraefix = $imagePraefix;
 	}
 
 	/**
@@ -682,6 +665,29 @@ class Horse extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setCategories(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $categories) {
 	    $this->categories = $categories;
+	}
+
+	/**
+	 * sets the Images
+	 *
+	 * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $images
+	 *
+	 * @return void
+	 */
+	public function setImages($images) {
+		$this->images = $images;
+	}
+
+	/**
+	 * get the Images
+	 *
+	 * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+	 */
+	public function getImages() {
+	  if (!is_object($this->images)){
+	    return null;
+	  } 
+	  else return $this->images;
 	}
 
 }
